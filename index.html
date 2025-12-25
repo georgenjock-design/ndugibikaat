@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mintolok — Official Links</title>
+  <meta name="description" content="Buy or read Your Book Title — official links for Amazon, Google Books and more." />
+
+  <!-- Social preview (optional) -->
+  <meta property="og:title" content="Your Book Title" />
+  <meta property="og:description" content="Official links to buy/read on Amazon, Google Books and more." />
+  <meta property="og:type" content="website" />
+  <!-- Replace with your hosted cover image URL -->
+  <!-- <meta property="og:image" content="https://yourdomain.com/cover.jpg" /> -->
+
+  <style>
+    :root { --max: 720px; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #0b0f17; color: #e9eefc;
+    }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 28px 18px 42px; }
+    .card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+    header { display: grid; grid-template-columns: 92px 1fr; gap: 16px; align-items: center; }
+    .cover {
+      width: 92px; height: 128px; border-radius: 12px;
+      background: rgba(255,255,255,0.10);
+      display: grid; place-items: center;
+      overflow: hidden;
+    }
+    .cover img { width: 100%; height: 100%; object-fit: cover; }
+    h1 { margin: 0; font-size: 1.35rem; line-height: 1.2; }
+    .meta { margin-top: 6px; opacity: 0.9; font-size: 0.95rem; }
+    .note { margin: 14px 0 0; opacity: 0.85; font-size: 0.95rem; }
+
+    .links { margin-top: 18px; display: grid; gap: 10px; }
+    .btn {
+      display: flex; align-items: center; justify-content: space-between;
+      text-decoration: none; color: inherit;
+      padding: 14px 14px; border-radius: 14px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.10);
+      transition: transform .08s ease, background .15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); background: rgba(255,255,255,0.12); }
+    .left { display: flex; flex-direction: column; gap: 2px; }
+    .label { font-weight: 650; }
+    .sub { font-size: 0.9rem; opacity: 0.85; }
+    .arrow { opacity: 0.75; font-size: 1.1rem; }
+
+    .footer { margin-top: 16px; font-size: 0.9rem; opacity: 0.75; text-align: center; }
+    .smalllinks { margin-top: 10px; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .smalllinks a { color: #cfe0ff; text-decoration: none; border-bottom: 1px dotted rgba(207,224,255,0.45); }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="card">
+      <header>
+        <div class="cover" aria-label="Book cover">
+          <!-- Replace with your cover image or remove the <img> line -->
+          <!-- <img src="cover.jpg" alt="Your Book Title cover" /> -->
+          <span style="opacity:.8;font-size:.85rem;">Cover</span>
+        </div>
+        <div>
+          <h1>Mìntɔlɔ̂k</h1>
+          <div class="meta">by Your Name • (Optional: Edition/Year)</div>
+          <p class="note">Choose where you’d like to buy or read.</p>
+        </div>
+      </header>
+
+      <div class="links">
+        <!-- ✅ Replace URLs below with your real links -->
+        <a class="btn" href="https://www.amazon.com/dp/B0DQYDXP54" target="_blank" rel="noopener" data-platform="amazon">
+          <span class="left">
+            <span class="label">Amazon</span>
+            <span class="sub">Buy the book on Amazon</span>
+          </span>
+          <span class="arrow">›</span>
+        </a>
+
+        <a class="btn" href="https://books.google.com/" target="_blank" rel="noopener" data-platform="googlebooks">
+          <span class="left">
+            <span class="label">Google Books</span>
+            <span class="sub">Preview / buy on Google Books</span>
+          </span>
+          <span class="arrow">›</span>
+        </a>
+
+        <a class="btn" href="https://books.apple.com/" target="_blank" rel="noopener" data-platform="applebooks">
+          <span class="left">
+            <span class="label">Apple Books</span>
+            <span class="sub">Read on iPhone / iPad</span>
+          </span>
+          <span class="arrow">›</span>
+        </a>
+
+        <a class="btn" href="https://www.kobo.com/" target="_blank" rel="noopener" data-platform="kobo">
+          <span class="left">
+            <span class="label">Kobo</span>
+            <span class="sub">eBook store alternative</span>
+          </span>
+          <span class="arrow">›</span>
+        </a>
+
+        <a class="btn" href="#" target="_blank" rel="noopener" data-platform="pdf">
+          <span class="left">
+            <span class="label">PDF / Direct Download</span>
+            <span class="sub">Optional: offer a PDF or bonus materials</span>
+          </span>
+          <span class="arrow">›</span>
+        </a>
+
+        <!-- Optional: WhatsApp -->
+        <a class="btn" href="https://wa.me/2376XXXXXXXX?text=Hello%20I%20want%20your%20book" target="_blank" rel="noopener" data-platform="whatsapp">
+          <span class="left">
+            <span class="label">WhatsApp</span>
+            <span class="sub">Ask a question / request bulk orders</span>
+          </span>
+          <span class="arrow">›</span>
+        </a>
+      </div>
+
+      <div class="smalllinks">
+        <a href="mailto:you@example.com">Email</a>
+        <a href="https://yourwebsite.com" target="_blank" rel="noopener">Author website</a>
+        <a href="https://yourwebsite.com/reviews" target="_blank" rel="noopener">Leave a review</a>
+      </div>
+
+      <div class="footer">© <span id="year"></span> Your Name. All rights reserved.</div>
+    </section>
+  </main>
+
+  <script>
+    // Set year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Optional lightweight click tracking (works with Google Analytics if installed)
+    // Replace with your own tracking later if you want.
+    document.querySelectorAll("a[data-platform]").forEach(a => {
+      a.addEventListener("click", () => {
+        // Example: console log for now
+        console.log("Clicked:", a.getAttribute("data-platform"), a.href);
+
+        // If you add GA4, you can enable:
+        // gtag('event', 'select_content', {content_type:'book_link', item_id:a.dataset.platform});
+      });
+    });
+  </script>
+</body>
+</html>
